@@ -1,0 +1,16 @@
+
+version: 2
+
+models:
+  - name: tmdb_credits
+    description: "movies credits"
+    columns:
+      - name: movie_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: title
+        description: "title of the movie"
+        tests:
+          - not_null
